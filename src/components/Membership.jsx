@@ -132,8 +132,8 @@ const MembershipCard = ({ tier, onSelect, isSelected }) => {
           onClick={() => onSelect(tier)}
           className={`w-full py-2 px-4 rounded-lg transition-colors flex items-center justify-center
             ${isSelected 
-              ? 'bg-brown-700 text-white' 
-              : 'bg-brown-600 text-white hover:bg-brown-700'}`}
+              ? 'bg-brown-700 text-black' 
+              : 'bg-brown-600 text-black hover:bg-brown-700'}`}
         >
           <CreditCard className="w-4 h-4 mr-2" />
           {isSelected ? 'Selected' : `Choose ${details.name}`}
@@ -199,7 +199,7 @@ const MembershipSelector = ({ currentTier, onTierSelect, isOpen, onClose }) => {
               onTierSelect(selectedTier);
               onClose();
             }}
-            className="px-4 py-2 bg-brown-600 text-white rounded-lg hover:bg-brown-700"
+            className="px-4 py-2 bg-brown-600 text-black rounded-lg hover:bg-brown-700"
           >
             Confirm Selection
           </button>
